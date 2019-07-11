@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="project" version="12.0.0.2017041100">
+  <ownedViewpoints name="MyViewpoint">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="CoolDiagram" initialisation="true" domainClass="metamodel::Warehouse" enablePopupBars="true">
+      <metamodel href="../../metamodel/model/metamodel.ecore#/"/>
+      <defaultLayer name="Default">
+        <edgeMappings name="InBinding" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@borderedNodeMappings[name='Entry']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@subContainerMappings[name='BoxNode']/@borderedNodeMappings[name='In']" targetFinderExpression="feature:binding">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="PipeEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@subContainerMappings[name='BoxNode']/@borderedNodeMappings[name='Out']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@subContainerMappings[name='BoxNode']/@borderedNodeMappings[name='In']" targetFinderExpression="feature:pipe">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ExitBinding" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@subContainerMappings[name='BoxNode']/@borderedNodeMappings[name='Out']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@borderedNodeMappings[name='Exit']" targetFinderExpression="feature:binding">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="CompositeNode" domainClass="metamodel::CompositeBox">
+          <borderedNodeMappings name="Entry" semanticCandidatesExpression="feature:input" domainClass="metamodel::Input">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            </style>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="Exit" semanticCandidatesExpression="feature:output" domainClass="metamodel::Output">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+            </style>
+          </borderedNodeMappings>
+          <subContainerMappings name="BoxNode" semanticCandidatesExpression="feature:boxes" domainClass="metamodel::Box">
+            <borderedNodeMappings name="In" semanticCandidatesExpression="feature:input" domainClass="metamodel::Input">
+              <style xsi:type="style:DotDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+              </style>
+            </borderedNodeMappings>
+            <borderedNodeMappings name="Out" semanticCandidatesExpression="feature:output" domainClass="metamodel::Output">
+              <style xsi:type="style:DotDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              </style>
+            </borderedNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CreateBox" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="metamodel::CompositeBox" referenceName="boxes"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="AddChild" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@subContainerMappings[name='BoxNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="metamodel::Box" referenceName="boxes"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="AddEntry" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@borderedNodeMappings[name='Entry']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="metamodel::Input" referenceName="input"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="AddExit" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@borderedNodeMappings[name='Exit']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="metamodel::Output" referenceName="output"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="AddInput" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@subContainerMappings[name='BoxNode']/@borderedNodeMappings[name='In']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="metamodel::Input" referenceName="input"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="AddOutput" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@containerMappings[name='CompositeNode']/@subContainerMappings[name='BoxNode']/@borderedNodeMappings[name='Out']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="metamodel::Output" referenceName="output"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="EntryToInput" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@edgeMappings[name='InBinding']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="binding" valueExpression="var:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="OutputToInput" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@edgeMappings[name='PipeEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="pipe" valueExpression="var:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="OutToExit" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='CoolDiagram']/@defaultLayer/@edgeMappings[name='ExitBinding']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="binding" valueExpression="var:target"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="my.project.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

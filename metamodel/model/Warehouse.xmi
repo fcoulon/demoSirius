@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metamodel:Warehouse xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:metamodel="http://www.example.org/metamodel" xsi:schemaLocation="http://www.example.org/metamodel metamodel.ecore">
+  <boxes xsi:type="metamodel:CompositeBox" name="A">
+    <input name="a" binding="//@boxes.0/@boxes.0/@input.0"/>
+    <input name="o" binding="//@boxes.0/@boxes.1/@input.1"/>
+    <output name="b"/>
+    <output name="g"/>
+    <boxes name="Test">
+      <input name="A"/>
+      <output name="d" pipe="//@boxes.0/@boxes.1/@input.0"/>
+      <output name="t" pipe="//@boxes.0/@boxes.1/@input.2"/>
+    </boxes>
+    <boxes name="Foo">
+      <input name="z"/>
+      <input name="c"/>
+      <input name="x"/>
+      <output name="f" binding="//@boxes.0/@output.1"/>
+      <output name="t" binding="//@boxes.0/@output.0"/>
+    </boxes>
+  </boxes>
+</metamodel:Warehouse>
